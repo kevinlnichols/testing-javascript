@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha src/test/**/**.spec.js"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^23.6.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
   }
