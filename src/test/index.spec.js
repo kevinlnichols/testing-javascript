@@ -1,4 +1,3 @@
-const assert = require('assert')
 const { add } = require('./../index')
 
 describe('The ADD function tests', function () {
@@ -8,14 +7,13 @@ describe('The ADD function tests', function () {
 
         const expectation = 11;
 
-        assert.equal(actual, expectation)
+        expect(actual).toEqual(expectation)
     })
 
     it('Should throw an error if arguments are not passed in', function () {
-        assert.throws(() => {
+        expect(() => {
             add()
-        })
-
+        }).toThrow()
     })
 
 })
